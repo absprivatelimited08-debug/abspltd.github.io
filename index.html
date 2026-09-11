@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ABS Private Limited - Team Leader and Team Coordinator job opportunities in Coimbatore, Tiruppur and Salem.">
+  <title>ABS Private Limited | Job Vacancies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#home"><span>ABS</span> Private Limited</a>
+    <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#jobs">Vacancies</a>
+      <a href="#locations">Locations</a>
+      <a class="nav-btn" href="#apply">Apply Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">ABS PRIVATE LIMITED</p>
+      <h1>Build Your Career.<br><span>Grow With Us.</span></h1>
+      <p class="hero-text">Professional opportunities for motivated candidates looking to grow in team coordination and leadership roles.</p>
+      <div class="actions">
+        <a class="btn primary" href="#jobs">View Vacancies</a>
+        <a class="btn secondary" href="#apply">Apply Now</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="card-label">CURRENT OPENINGS</div>
+      <div class="big">50+</div>
+      <p>Positions available</p>
+      <div class="mini-grid">
+        <div><strong>Team Leader</strong><small>Leadership role</small></div>
+        <div><strong>Team Coordinator</strong><small>Coordination role</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow">ABOUT US</p>
+      <h2>Opportunities that help you move forward.</h2>
+    </div>
+    <div>
+      <p>ABS Private Limited provides career opportunities for candidates interested in professional team coordination and leadership responsibilities.</p>
+      <p>We are looking for motivated freshers and experienced candidates who are ready to learn, communicate and grow in a professional working environment.</p>
+    </div>
+  </div>
+</section>
+
+<section id="jobs" class="section light">
+  <div class="container">
+    <div class="section-head">
+      <div><p class="eyebrow">JOB VACANCIES</p><h2>Find your next opportunity</h2></div>
+      <span class="badge">Hiring Now</span>
+    </div>
+    <div class="job-grid">
+      <article class="job">
+        <div class="job-icon">TL</div>
+        <h3>Team Leader</h3>
+        <p>Handle and support a team, coordinate activities and develop leadership skills.</p>
+        <ul><li>Eligibility: Any Degree</li><li>Full-time: ₹20,000–₹25,000</li><li>Part-time: ₹8,000–₹12,000</li></ul>
+        <a href="#apply" class="job-link">Apply for this role →</a>
+      </article>
+      <article class="job">
+        <div class="job-icon">TC</div>
+        <h3>Team Coordinator</h3>
+        <p>Coordinate team activities, communicate with members and support day-to-day operations.</p>
+        <ul><li>Eligibility: Any Degree</li><li>Full-time: ₹20,000–₹25,000</li><li>Part-time: ₹8,000–₹12,000</li></ul>
+        <a href="#apply" class="job-link">Apply for this role →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="locations" class="section">
+  <div class="container">
+    <p class="eyebrow">LOCATIONS</p>
+    <h2>Where opportunities are available</h2>
+    <div class="location-grid">
+      <div class="location"><strong>01</strong><h3>Coimbatore</h3><p>Head Office · Gandhipuram, 100 Feet Road</p></div>
+      <div class="location"><strong>02</strong><h3>Tiruppur</h3><p>Job opportunities available</p></div>
+      <div class="location"><strong>03</strong><h3>Salem</h3><p>Job opportunities available</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="apply" class="section apply">
+  <div class="container apply-grid">
+    <div>
+      <p class="eyebrow">APPLY NOW</p>
+      <h2>Ready to take the next step?</h2>
+      <p>Submit your details through the application form or contact our recruiter directly.</p>
+      <div class="contact-box">
+        <strong>Recruiter: Essakki Raja</strong>
+        <span>Phone: 9361382390</span>
+      </div>
+      <a class="btn primary" href="tel:+919361382390">Call Recruiter</a>
+      <a class="btn whatsapp" href="https://wa.me/919361382390?text=Hello%20Essakki%20Raja%2C%20I%20am%20interested%20in%20the%20ABS%20Private%20Limited%20job%20vacancy." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <form class="form" onsubmit="sendApplication(event)">
+      <label>Full Name<input id="name" required placeholder="Enter your name"></label>
+      <label>Phone Number<input id="phone" required type="tel" placeholder="Enter your phone number"></label>
+      <label>Qualification<input id="qualification" required placeholder="e.g. Any Degree"></label>
+      <label>Preferred Role<select id="role"><option>Team Coordinator</option><option>Team Leader</option></select></label>
+      <label>Preferred Location<select id="location"><option>Coimbatore</option><option>Tiruppur</option><option>Salem</option></select></label>
+      <button class="btn primary full" type="submit">Send Application on WhatsApp</button>
+      <p class="form-note">Your application will open in WhatsApp with the details you entered.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <div><div class="brand"><span>ABS</span> Private Limited</div><p>Professional career opportunities.</p></div>
+    <div><p>Coimbatore · Tiruppur · Salem</p><p>© 2026 ABS Private Limited. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('navLinks').classList.toggle('open')}
+function sendApplication(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const qualification=document.getElementById('qualification').value.trim();
+  const role=document.getElementById('role').value;
+  const location=document.getElementById('location').value;
+  const msg=`Hello Essakki Raja,%0A%0AI would like to apply for a job at ABS Private Limited.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AQualification: ${encodeURIComponent(qualification)}%0ARole: ${encodeURIComponent(role)}%0APreferred Location: ${encodeURIComponent(location)}`;
+  window.open(`https://wa.me/919361382390?text=${msg}`,'_blank');
+}
+</script>
+</body>
+</html>
